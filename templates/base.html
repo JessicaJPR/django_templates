@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio:index' %}">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; Django Project Templates 2026</p>
+    </footer>
 </body>
 </html>
